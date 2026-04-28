@@ -61,7 +61,7 @@ export const About = () => {
 
           <figure className="space-y-4 md:mt-16">
             <img src={mae} alt="Hoje" className="w-full h-auto" loading="lazy" />
-            <h3 className="font-serif text-2xl sm:text-3xl text-foreground text-center">De Frustrado e sem pespectiva a Rico através do digital...</h3>
+            <h3 className="font-serif text-2xl sm:text-3xl text-foreground text-center">De Frustrado e sem perspectiva a Rico através do digital...</h3>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               O próximo pode ser você, basta tomar decisão e se comprometer consigo mesmo...
             </p>
