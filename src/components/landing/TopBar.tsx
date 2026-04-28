@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { WHATSAPP_URL } from "@/lib/links";
 
 const targetTime = () => {
   const stored = localStorage.getItem("offer_deadline");
@@ -34,7 +35,7 @@ export const TopBar = () => {
           <span>{pad(m)}</span><span className="text-primary opacity-100">:</span>
           <span>{pad(s)}</span>
         </div>
-        <a href="#oferta" className="hidden md:inline-block text-primary font-semibold hover:underline underline-offset-4">
+        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hidden md:inline-block text-primary font-semibold hover:underline underline-offset-4">
           Garantir vaga →
         </a>
       </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import mentor from "@/assets/fundo.png";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/links";
 
 const chatSeed = [
   { name: "Camila", msg: "Que aula incrível 🔥", color: "from-primary to-ember" },
@@ -117,7 +118,7 @@ export const LiveSession = () => {
 
               <div className="mt-5 pt-4 border-t border-border">
                 <Button asChild className="btn-cta w-full h-12 rounded-full font-bold">
-                  <a href="#oferta">Quero participar das lives →</a>
+                  <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Quero participar das lives →</a>
                 </Button>
               </div>
             </div>

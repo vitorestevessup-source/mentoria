@@ -1,5 +1,6 @@
 import mentor from "@/assets/im2.jpg";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/links";
 
 export const Hero = () => {
   return (
@@ -91,7 +92,7 @@ export const Hero = () => {
                 size="lg"
                 className="btn-cta h-14 rounded-full px-8 text-base font-bold shadow-[0_0_20px_rgba(57,255,20,0.25),0_14px_34px_-14px_rgba(57,255,20,0.45)] transition-all duration-200 ease-out hover:scale-[1.03] hover:shadow-[0_0_26px_rgba(57,255,20,0.35),0_18px_40px_-16px_rgba(57,255,20,0.55)]"
               >
-                <a href="#oferta">Quero aprender o método agora</a>
+                <a href="#metodo">Quero aprender o método agora</a>
               </Button>
               <Button
                 asChild
@@ -99,7 +100,7 @@ export const Hero = () => {
                 size="lg"
                 className="h-14 rounded-full px-8 text-base text-[#f2f2f2] hover:bg-white/5 hover:text-white"
               >
-                <a href="#metodo">Conhecer o método</a>
+                <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Conhecer o método</a>
               </Button>
             </div>
             <p className="text-sm font-medium text-[#EAEAEA] [text-shadow:0_0_10px_rgba(255,184,77,0.12)]">
