@@ -19,6 +19,7 @@ export const TopBar = () => {
 
   const h = Math.floor(diff / 3.6e6);
   const m = Math.floor((diff % 3.6e6) / 6e4);
+  const s = Math.floor((diff % 6e4) / 1000);
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   return (
@@ -29,8 +30,9 @@ export const TopBar = () => {
         </span>
         <span className="sm:hidden text-muted-foreground uppercase tracking-widest">Últimas vagas</span>
         <div className="flex items-center gap-1 font-mono font-semibold text-gradient-gold text-base">
-          <span>{pad(h)}</span><span className="opacity-50">:</span>
-          <span>{pad(m)}</span>
+          <span>{pad(h)}</span><span className="text-primary opacity-100">:</span>
+          <span>{pad(m)}</span><span className="text-primary opacity-100">:</span>
+          <span>{pad(s)}</span>
         </div>
         <a href="#oferta" className="hidden md:inline-block text-primary font-semibold hover:underline underline-offset-4">
           Garantir vaga →
